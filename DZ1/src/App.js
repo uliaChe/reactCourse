@@ -37,7 +37,7 @@ export default class App extends Component {
                     Добавить
                 </button>
                 <div className='todo-container'>
-                    {this.state.news.map(item => <NewsPost text={item.text} key={item.text}/>)}
+                   {this.state.news.map((item, index) => <NewsPost text={item.text} key={index}/>)}
                 </div>    
             </div>
         );
