@@ -15,7 +15,9 @@ export default class CardNumberInput extends Component {
     }
 
     format = (data) => {
-        if (!data) {
+        const strFormatted = [...data].map((item, index) => index % 4 === 0 && index ? ` ${item}` : item).join('');
+        // console.log('data', [...data].map((item, index) => (index % 4 === 0 && index) ? ` ${item}` : item).join(''));
+        /* if (!data) {
             return '';
         }
         const strToFormat = typeof(data) === 'string' ? data : data.toString();
@@ -29,7 +31,7 @@ export default class CardNumberInput extends Component {
             }
     
             strFormatted += strToFormat.substr(i, kChunkLengthMax);
-        }
+        }*/
         return strFormatted;
     }
 

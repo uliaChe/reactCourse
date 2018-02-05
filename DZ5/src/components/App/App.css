@@ -1,0 +1,7 @@
+.app {
+  display: flex;
+  padding: 20px;
+  flex-basis: 200;
+  align-self: flex-start;
+  align-items: flex-start;
+}

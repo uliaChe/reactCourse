@@ -13,9 +13,8 @@ export default class CardNumberHolder extends Component {
     }
 
     handleChange = (e) => {
-        // console.log(e.target.value);
         const normalized = this.child.normalize(e.target.value);
-        console.log('normalized', normalized);
+
         this.setState({cardNumber: normalized});
     }
 

@@ -1,0 +1,17 @@
+.budget {
+  border-radius: 4px;
+  background-color: #eee;
+  padding: 10px 20px;
+  margin: 0 10px;
+  width: 300px;
+}
+
+.t-profit,
+.t-sellers,
+.t-farm,
+.t-delivery,
+.t-total {
+  padding-left: 5px
+}
+
+
