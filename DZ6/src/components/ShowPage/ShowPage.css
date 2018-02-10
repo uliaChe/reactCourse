@@ -1,0 +1,21 @@
+.show {
+    padding: 20px;
+    text-align: center;
+}
+
+.show p {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.show-persons {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.t-person {
+    margin-bottom: 30px;
+}
