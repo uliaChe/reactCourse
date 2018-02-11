@@ -7,7 +7,8 @@ import './ShowPage.css';
 const ShowPersons = ({name, image}) => 
     <div className='t-person'>
         <p>{name}</p>
-        <img src={image} alt={name}/>
+       {image &&
+            <img src={image} alt={name}/>}
     </div>
 
 class ShowPage extends Component {
@@ -49,7 +50,7 @@ class ShowPage extends Component {
                             return (
                             <ShowPersons
                                 name={person.name}
-                                image={person.image.medium}
+                                image={person.image ? person.image.medium : null}
                             />)   
                         })}
                     </div>} 

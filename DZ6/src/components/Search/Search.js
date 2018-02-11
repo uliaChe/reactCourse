@@ -13,9 +13,10 @@ const ShowInfo = (props) => {
             <h3>
                 <Link to={`/shows/${id}`} className='t-link'>{title}</Link>
             </h3>
-            <div className='show-img'>
-                <img src={image} alt={title}/>
-            </div>
+            {image &&
+                <div className='show-img'>
+                    <img src={image} alt={title}/>
+                </div>}
             <div className='show-descr' dangerouslySetInnerHTML={{__html: text}}/>
         </div>
     );
@@ -69,7 +70,7 @@ class Search extends Component {
                             <ShowInfo
                                 key={item.id}
                                 id={item.id}
-                                image={item.image.medium}
+                                image={item.image ? item.image.medium : null}
                                 title={item.name}
                                 text={item.summary}
                             /> 
